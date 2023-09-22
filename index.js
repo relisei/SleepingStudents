@@ -4,8 +4,7 @@ const studentA = {
   lastNightSleepHours: 4,
   mark: 4,
   introduceYourself() {
-    console.log("Hola");
+    return `Hola me llamo ${this.name} ${this.surname} y he dormido ${this.lastNightSleepHours} horas`;
   },
 };
-
-console.log(studentA.name);
+console.log(studentA.introduceYourself());
